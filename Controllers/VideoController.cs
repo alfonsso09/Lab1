@@ -4,6 +4,10 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
+using System.Data;
+using System.Data.SqlClient;
+using MVCPlantilla.Utilerias;
+
 namespace MvcPlantilla.Controllers
 {
     public class VideoController : Controller
@@ -28,6 +32,9 @@ namespace MvcPlantilla.Controllers
 
         public ActionResult Mostrar()
         {
+            //Consultar los datos de BD
+            ViewData["datavideo"] = BaseHelper.ejecutarConsulta("select * from video", CommandType.Text);
+
             return View();
         }
 

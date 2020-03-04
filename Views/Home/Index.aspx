@@ -5,6 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
     <title>Index</title>
+
 </head>
 <body>
     <div>
@@ -12,9 +13,13 @@
         <hr />
 
         <a href="/Video/Create">Registrar Video</a>
+        <br />
         <a href="/Video/Eliminar">Eliminar Video</a>
+        <br />
         <a href="/Video/Actualizar">Actualizar Video</a>
+        <br />
         <a href="/Video/Mostrar">Mostrar Videos</a>
+        <br />
 
     </div>
 </body>

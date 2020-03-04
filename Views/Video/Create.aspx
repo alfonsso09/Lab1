@@ -18,8 +18,8 @@
                 <label for="titulo">titulo</label>
                 <input type="text" name="titulo"/>
 
-                <label for="reproducciones">reproducciones</label>
-                <input type="text" name="reproducciones"/>
+                <label for="repro">reproducciones</label>
+                <input type="text" name="repro"/>
 
                 <label for="url">url</label>
                 <input type="text" name="url"/>

@@ -5,10 +5,25 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
     <title>Mostrar</title>
+    <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <div>
-    
-    </div>
+    <h1>Lista de videos</h1>
+    Hay <%: ((System.Data.DataTable)ViewData ["datavideo"]).Rows.Count %> videos
+    <hr />
+        <%
+            foreach (System.Data.DataRow video in ((System.Data.DataTable)ViewData["datavideo"]).Rows )
+            { %>
+                <p> <%: video["titulo"].ToString() %> </p>
+                <iframe width="560" height="315" 
+                src="<%: video["url"].ToString() %>"
+                frameborder="0" allow="accelerometer; autoplay; 
+                encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+
+        <%
+            }
+         %>
+
 </body>
 </html>
