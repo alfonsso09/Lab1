@@ -5,10 +5,21 @@
 <html xmlns="http://www.w3.org/1999/xhtml" >
 <head runat="server">
     <title>Eliminar</title>
+    <link href="../../Content/Site.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <div>
-    
+        <form action="/Video/Eliminar" method="post">
+            <fieldset>
+                <legend>Eliminar video</legend>
+
+                <label for="idvideo">idvideo</label>
+                <input type="text" name="idvideo"/>
+
+                <input type="submit" name="Eliminar video"/>
+            </fieldset>
+        </form>
     </div>
 </body>
 </html>
+
